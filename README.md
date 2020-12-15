@@ -16,17 +16,23 @@ It's a console app, so you have to type all params in a console. Don't worry tho
 - Path to FFMpeg bin dir (folder)
 - Path to video source dir (folder)
 - Path to video output dir (folder)
-- Path to temp files dir (folder) - for now it's no use
+- Path to temp files dir (folder)
 - Max. filesize in MB
 - Search for especially video extension (mp4, avi, flv, wmv, mkv - only supported)
+- Replace . and \_ with whitespaces for splitted videos
 
 # How It Works
 
-You have to define max. filesize and the script will split video source into parts. On gathering of media info it checks if the video have to be splitted or not. If the filesize is bigger that estimated and predefined filesize the script starts to checking in how much part it should be splitted. In this case - original size / estimated size.
-FFMpeg saves video "cut" to output dir with automatically generated part num with equal video length.
+To split a video, you need to specify the exact file size limit in MB. The script determines how many files the video file should be splitted into based on the specified file size. However, the split is not exactly based on the file size, but on the uniformity of the video duration.
 
+**For example**: a **6.5 GB** video file with a duration of **3 hours**. The file will be splitted into **6** parts with a duration of **30 minutes**. The last split of the video file in practice turns out to be larger and longer than the previous splits, since they retain the difference in milliseconds that is possible during splitting.
+
+You need the FFMPEG library for Windows so that the script could processe the video correctly.
+
+If the video has a different file extension than mp4, the library recodes the files itself. In particular, this applies to AVI and WMV files. In other cases, the script "copies" sections in the form of parts.
 
 # Screenshot
+
 ![Screenshot 1](./ScreenShots/1.png) ![Screenshot 2](./ScreenShots/2.png) ![Screenshot 3](./ScreenShots/3.png) ![Screenshot 4](./ScreenShots/4.png)
 
 # Have Fun
