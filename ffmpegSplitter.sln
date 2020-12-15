@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ffmpegSplitter", "ffmpegSplitter\ffmpegSplitter.csproj", "{1030ED49-E496-42E9-954F-1B94F60B905A}"
+EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "Setup_advinst", "Setup_advinst\Setup_advinst.aiproj", "{48FAEEBE-397C-4CC5-AA6D-4227091785B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1030ED49-E496-42E9-954F-1B94F60B905A}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{1030ED49-E496-42E9-954F-1B94F60B905A}.All|Any CPU.Build.0 = Release|Any CPU
+		{1030ED49-E496-42E9-954F-1B94F60B905A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1030ED49-E496-42E9-954F-1B94F60B905A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1030ED49-E496-42E9-954F-1B94F60B905A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1030ED49-E496-42E9-954F-1B94F60B905A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48FAEEBE-397C-4CC5-AA6D-4227091785B8}.All|Any CPU.ActiveCfg = All
+		{48FAEEBE-397C-4CC5-AA6D-4227091785B8}.All|Any CPU.Build.0 = All
+		{48FAEEBE-397C-4CC5-AA6D-4227091785B8}.Debug|Any CPU.ActiveCfg = Debug
+		{48FAEEBE-397C-4CC5-AA6D-4227091785B8}.Debug|Any CPU.Build.0 = Debug
+		{48FAEEBE-397C-4CC5-AA6D-4227091785B8}.Release|Any CPU.ActiveCfg = Release
+		{48FAEEBE-397C-4CC5-AA6D-4227091785B8}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E35EF3E-4CDB-4A08-A516-401CD1D17B94}
+	EndGlobalSection
+EndGlobal

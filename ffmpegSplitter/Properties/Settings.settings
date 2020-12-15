@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ffmpegSplitter.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ffmpeg" Type="System.String" Scope="User">
+      <Value Profile="(Default)">./ffmpeg/bin</Value>
+    </Setting>
+    <Setting Name="video_src" Type="System.String" Scope="User">
+      <Value Profile="(Default)">./src</Value>
+    </Setting>
+    <Setting Name="video_out" Type="System.String" Scope="User">
+      <Value Profile="(Default)">../out</Value>
+    </Setting>
+    <Setting Name="sizeSplit" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1800</Value>
+    </Setting>
+    <Setting Name="format" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mp4</Value>
+    </Setting>
+    <Setting Name="tmpDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">../tmp</Value>
+    </Setting>
+    <Setting Name="convertTo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mp4</Value>
+    </Setting>
+    <Setting Name="returnWhiteSpaces" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
