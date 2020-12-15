@@ -1,10 +1,10 @@
-﻿using FFMpegCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows;
+using System.Configuration;
 
 namespace ffmpegSplitter
 {
@@ -36,7 +36,7 @@ namespace ffmpegSplitter
             if(splits == 0)
             {
                 this._splitter.Add(new splitTime() { Start=0, End=duration_sec });
-                if(string.Compare(this.format, Properties.Settings.Default.convertTo) ==0 ) this._skip = true;
+                if(string.Compare(this.format, ConfigurationManager.AppSettings["convertTo"]) ==0 ) this._skip = true;
             } else
             {
                 float start = 0, end = this.duration_sec, durAdd = (this.duration_sec / splits);
@@ -65,17 +65,54 @@ namespace ffmpegSplitter
     class Program
     {
 
-        static string binFiles = Properties.Settings.Default.ffmpeg, 
-            tmpDir = Properties.Settings.Default.tmpDir, 
-            srcDir = Properties.Settings.Default.video_src,
-            outDir = Properties.Settings.Default.video_out, 
-            splitSize = Properties.Settings.Default.sizeSplit, 
-            format = Properties.Settings.Default.format,
-            convertTo = Properties.Settings.Default.convertTo;
+        private static string ReadSetting(string key)
+        {
+            try
+            {
+                var appSettings = ConfigurationManager.AppSettings;
+                return appSettings[key] ?? "";
+            }
+            catch (ConfigurationErrorsException)
+            {
+                return "Not Found";
+            }
+        }
+
+        static void AddUpdateAppSettings(string key, string value)
+        {
+            try
+            {
+                var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                var settings = configFile.AppSettings.Settings;
+                if (settings[key] == null)
+                {
+                    settings.Add(key, value);
+                }
+                else
+                {
+                    settings[key].Value = value;
+                }
+                configFile.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+            }
+            catch (ConfigurationErrorsException)
+            {
+                Console.WriteLine("Error writing app settings");
+            }
+        }
+
+        static string binFiles = ReadSetting("ffmpeg"), 
+            tmpDir = ReadSetting("tmpDir"), 
+            srcDir = ReadSetting("video_src"),
+            outDir = ReadSetting("video_out"), 
+            splitSize = ReadSetting("sizeSplit"), 
+            format = ReadSetting("format"),
+            convertTo = ReadSetting("convertTo"),
+            returnWhiteSpace = ReadSetting("returnWhiteSpaces");
         static List<string> allowedFormats = new List<string>() { "mp4", "avi", "flv", "wmv", "mkv" };
         static List<videoFile> videos = new List<videoFile>();
         static int videosToSplit = 0;
-        static bool ignoreSkip = false, returnWhiteSpace = Properties.Settings.Default.returnWhiteSpaces;
+        static bool ignoreSkip = false;
 
         static void breakLine(int how = 60)
         {
@@ -103,7 +140,7 @@ namespace ffmpegSplitter
         static void Main(string[] args)
         {
 
-            credits("Maxim Harder", 2020, "1.1.0");
+            credits("Maxim Harder", 2020, "1.1.1");
 
             Console.WriteLine("\nPath to ffmpeg bin dir. By default: ");
             Console.WriteLine(binFiles);
@@ -137,13 +174,13 @@ namespace ffmpegSplitter
             Console.WriteLine("Please enter new format or let it be empty:");
             string newFormat = Console.ReadLine();
 
-            Console.WriteLine("\nConvert video anyway? [y/N]: ");
+            Console.WriteLine("\nConvert video anyway? [y/n] (default: N): ");
             string ignoreSkipSetting = Console.ReadLine();
 
-            Console.WriteLine("\nReplace _ and . with whitespaces? [y/N]: ");
+            Console.WriteLine("\nReplace _ and . with whitespaces? [y/n] (default: {0}): ", ((returnWhiteSpace.ToLower().CompareTo("true") == 0) ? "Y" : "N" ));
             string newSettingsWhiteSpaces = Console.ReadLine();
 
-            Console.WriteLine("\nSave as default settings? [y/n]: ");
+            Console.WriteLine("\nSave as default settings? [y/n] (default: N): ");
             string newSettings = Console.ReadLine();
 
             breakLine();
@@ -155,20 +192,20 @@ namespace ffmpegSplitter
             if (!string.IsNullOrEmpty(newSizeSplit) && !string.IsNullOrWhiteSpace(newSizeSplit)) splitSize = newSizeSplit;
             if (!string.IsNullOrEmpty(newFormat) && !string.IsNullOrWhiteSpace(newFormat)) format = newFormat;
             if (!string.IsNullOrEmpty(newSettingsWhiteSpaces) && !string.IsNullOrWhiteSpace(newSettingsWhiteSpaces))
-                if (newSettingsWhiteSpaces.CompareTo("y") == 0) returnWhiteSpace = true;
+                if (newSettingsWhiteSpaces.CompareTo("y") == 0) returnWhiteSpace = true.ToString();
             if (!string.IsNullOrEmpty(ignoreSkipSetting) && !string.IsNullOrWhiteSpace(ignoreSkipSetting))
                 if (ignoreSkipSetting.CompareTo("y") == 0) ignoreSkip = true;
             if (!string.IsNullOrEmpty(newSettings) && !string.IsNullOrWhiteSpace(newSettings))
             {
                 if(string.Compare(newSettings.ToLower(), "y") == 0)
                 {
-                    Properties.Settings.Default.ffmpeg = binFiles;
-                    Properties.Settings.Default.tmpDir = tmpDir;
-                    Properties.Settings.Default.video_src = srcDir;
-                    Properties.Settings.Default.video_out = outDir;
-                    Properties.Settings.Default.sizeSplit = splitSize;
-                    Properties.Settings.Default.format = format;
-                    Properties.Settings.Default.returnWhiteSpaces = returnWhiteSpace;
+                    AddUpdateAppSettings("ffmpeg", binFiles);
+                    AddUpdateAppSettings("tmpDir", tmpDir);
+                    AddUpdateAppSettings("video_src", srcDir);
+                    AddUpdateAppSettings("video_out", outDir);
+                    AddUpdateAppSettings("sizeSplit", splitSize);
+                    AddUpdateAppSettings("format", format);
+                    AddUpdateAppSettings("returnWhiteSpaces", returnWhiteSpace);
                 }
             }
 
@@ -220,47 +257,125 @@ namespace ffmpegSplitter
             Console.Write("Convert only: " + format.ToUpper() + " files");
 
             breakLine();
-
-            FFMpegOptions.Configure(new FFMpegOptions { RootDirectory = binFiles, TempDirectory = tmpDir });
-
-            scanFiles(srcDir, "*." + format);
+            genVideos();
             breakLine();
             splitFiles();
+            breakLine();
+            cleanData();
 
             MessageBox.Show(string.Format("All {0} files were splitted successfully!", videosToSplit));
 
         }
 
-        static void scanFiles(string path, string pattern )
+        static void cleanData()
         {
-            List<string> search = Directory.GetFiles(path, pattern).ToList();
-
-            foreach(string item in search)
+            List<string> files = ScanFiles(tmpDir, "*.*");
+            bool clean = false;
+            if (files.Count > 0)
             {
-                FileInfo fi = new FileInfo(item);
-                if (format.Equals("*"))
+                Console.WriteLine("You have {0} files in your temporary folder. Do you wish to clean them? [y/n]", files.Count);
+                string cleanAgree = Console.ReadLine();
+
+                if (cleanAgree.ToLower().CompareTo('y') == 0) clean = true;
+            }
+            else clean = true;
+
+            if(clean) Directory.Delete(tmpDir, true);
+
+            Console.WriteLine("Temporary data has been removed!");
+        }
+
+        static void consoleCommand(string exe, string command, bool newShell = true)
+        {
+            string fileName = string.Format("\"{0}\\{1}\"", binFiles, exe).Replace(@"\", @"/");
+            var splitterInfo = new ProcessStartInfo
+            {
+                UseShellExecute = newShell,
+                FileName = fileName,
+                Arguments = command
+            };
+
+            using (var process = Process.Start(splitterInfo))
+            {
+                process.WaitForExit();
+            }
+        }
+
+        static void genVideos()
+        {
+            List<string> files = ScanFiles(srcDir, "*." + format);
+            using (var progress = new ProgressBar())
+            {
+                int videoNow = 0;
+                Console.WriteLine("Collect data...");
+                foreach (string item in files)
                 {
-                    if (!allowedFormats.Contains(fi.Extension.Replace(".","")))
+                    FileInfo fi = new FileInfo(item);
+                    if (format.Equals("*"))
                     {
+                        if (!allowedFormats.Contains(fi.Extension.Replace(".", "").ToLower()))
+                        {
+                            continue;
+                        }
+                    }
+
+                    Console.WriteLine("   " + fi.Name + "\n");
+
+                    var ffProbe = new NReco.VideoInfo.FFProbe();
+                    ffProbe.ToolPath = binFiles;
+                    try
+                    {
+                        var videoInfo = ffProbe.GetMediaInfo(item);
+
+                        videoFile vid = new videoFile();
+                        vid.name = fi.Name.Replace(fi.Extension, "");
+                        vid.duration_sec = (float)videoInfo.Duration.TotalSeconds;
+                        vid.format = fi.Extension.Replace(".", "").ToLower();
+                        vid.path = fi.FullName.Replace(@"\", @"/");
+                        vid.size = fi.Length;
+                        vid.setSplitter();
+                        if (ignoreSkip) vid._skip = false;
+                        videos.Add(vid);
+                    }
+                    catch (Exception e)
+                    {
+                        string errorFile = string.Format(@"{0}\{1}_error.txt", tmpDir, fi.Name);
+                        Console.WriteLine("Error: {0}", fi.Name);
+                        using (StreamWriter writer = new StreamWriter(errorFile, true))
+                        {
+                            writer.WriteLine("-----------------------------------------------------------------------------");
+                            writer.WriteLine("Date : " + DateTime.Now.ToString());
+                            writer.WriteLine();
+
+                            while (e != null)
+                            {
+                                writer.WriteLine(e.GetType().FullName);
+                                writer.WriteLine("Message : " + e.Message);
+                                writer.WriteLine("StackTrace : " + e.StackTrace);
+
+                                e = e.InnerException;
+                            }
+                        }
+
                         continue;
                     }
-                }
-                var mediaInfo = FFProbe.Analyse(item);
-                videoFile vid = new videoFile();
-                vid.name = fi.Name.Replace(mediaInfo.Extension, "");
-                vid.duration_sec = (float)mediaInfo.Duration.TotalSeconds;
-                vid.format = mediaInfo.Extension.Replace(".", "");
-                vid.path = mediaInfo.Path;
-                vid.size = fi.Length;
-                vid.setSplitter();
-                if (ignoreSkip) vid._skip = false;
-                videos.Add(vid);
-            }
 
+                    progress.Report((double)videoNow / files.Count);
+                    videoNow++;
+                }
+            }
+            breakLine();
+            Console.WriteLine("Done.");
+            breakLine();
             videosToSplit = videos.Count(x => x._skip == false);
 
-            Console.WriteLine("Total {0} files counted,", search.Count);
+            Console.WriteLine("Total {0} files counted,", files.Count);
             Console.Write("{0} will be processed.", videosToSplit);
+        }
+
+        private static List<string> ScanFiles(string path, string pattern )
+        {
+            return Directory.GetFiles(path, pattern).ToList();
         }
 
         private static void drawTextProgressBar(int progress, int total, string name)
@@ -322,7 +437,7 @@ namespace ffmpegSplitter
             {
                 foreach (var video in videos.FindAll(x => x._skip == false))
                 {
-                    progress.Report((double)videoNow / 100);
+                    progress.Report((double)videoNow / videos.Count);
                     for(int i = 0, max = video._splitter.Count; i < max; i++)
                     {
                         string tempName = video.name + "_p" + Filler((i + 1)) + "." + convertTo;
@@ -330,7 +445,7 @@ namespace ffmpegSplitter
                         TimeSpan tEnd = TimeSpan.FromSeconds(video._splitter[i].End);
                         string outPath = string.Format("{0}\\{1}", outDir, tempName);
                         string replaceName = "";
-                        if(returnWhiteSpace) replaceName = string.Format("{0}\\{1}", outDir, video.name + "_p" + Filler((i + 1)).Replace("_", " ").Replace(".", " ")) + "." + convertTo;
+                        if(Convert.ToBoolean(returnWhiteSpace)) replaceName = string.Format("{0}\\{1}", outDir, video.name + "_p" + Filler((i + 1)).Replace("_", " ").Replace(".", " ")) + "." + convertTo;
 
                         string startTime = string.Format("{0:D2}:{1:D2}:{2:D2}",
                                                         tStart.Hours,
@@ -341,24 +456,10 @@ namespace ffmpegSplitter
                                                         tEnd.Minutes,
                                                         tEnd.Seconds);
                         string command = string.Format("-i {0} -ss {1} -to {2} -c copy {3}", video.path, startTime, endTime, outPath);
-                        string ffExe = binFiles + "\\ffmpeg.exe";
-
-                        string consCom = ffExe + " " + command;
 
                         drawTextProgressBar((i + 1), max, video.name);
 
-                        var splitterInfo = new ProcessStartInfo
-                        {
-                            UseShellExecute = true,
-                            FileName = ffExe,
-                            Arguments = command
-                        };
-
-                        using (var process = Process.Start(splitterInfo))
-                        {
-                            process.WaitForExit();
-                            if (returnWhiteSpace) File.Move(outPath, replaceName);
-                        }
+                        consoleCommand("ffmpeg.exe", command);
 
                     }
                     videoNow++;
