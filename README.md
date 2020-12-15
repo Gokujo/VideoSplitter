@@ -21,6 +21,10 @@ It's a console app, so you have to type all params in a console. Don't worry tho
 - Search for especially video extension (mp4, avi, flv, wmv, mkv - only supported)
 - Replace . and \_ with whitespaces for splitted videos
 
+You can apply custom settings even before the first start. Open <kbd>ffmpegSplitter.exe.config</kbd> with editor or notepad and find those lines:
+![Screenshot 5](./ScreenShots/5.png)
+Find **appSettings** and for each key you can put your own lines into it.
+
 # How It Works
 
 To split a video, you need to specify the exact file size limit in MB. The script determines how many files the video file should be splitted into based on the specified file size. However, the split is not exactly based on the file size, but on the uniformity of the video duration.
