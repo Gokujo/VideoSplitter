@@ -66,13 +66,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ffmpegSplitter.exe.config" size="1878">
+  <file name="ffmpegSplitter.exe.config" size="1888">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>kDyFRR9IFwAvPAEjfc3f8P1fX3ufofQCWK1gV4bTJZs=</dsig:DigestValue>
+      <dsig:DigestValue>BvUKIEtF0dH4aG1yYFuv2nPu7StI5jiGNVAh4XjHTjo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="icon.ico" size="4286">

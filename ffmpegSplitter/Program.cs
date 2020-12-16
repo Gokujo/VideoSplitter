@@ -108,7 +108,8 @@ namespace ffmpegSplitter
             splitSize = ReadSetting("sizeSplit"), 
             format = ReadSetting("format"),
             convertTo = ReadSetting("convertTo"),
-            returnWhiteSpace = ReadSetting("returnWhiteSpaces");
+            returnWhiteSpace = ReadSetting("returnWhiteSpaces"),
+            removeSplitted = ReadSetting("removeConverted");
         static List<string> allowedFormats = new List<string>() { "mp4", "avi", "flv", "wmv", "mkv" };
         static List<videoFile> videos = new List<videoFile>();
         static int videosToSplit = 0;
@@ -140,7 +141,7 @@ namespace ffmpegSplitter
         static void Main(string[] args)
         {
 
-            credits("Maxim Harder", 2020, "1.1.1");
+            credits("Maxim Harder", 2020, "1.2.0");
 
             Console.WriteLine("\nPath to ffmpeg bin dir. By default: ");
             Console.WriteLine(binFiles);
@@ -177,8 +178,11 @@ namespace ffmpegSplitter
             Console.WriteLine("\nConvert video anyway? [y/n] (default: N): ");
             string ignoreSkipSetting = Console.ReadLine();
 
-            Console.WriteLine("\nReplace _ and . with whitespaces? [y/n] (default: {0}): ", ((returnWhiteSpace.ToLower().CompareTo("true") == 0) ? "Y" : "N" ));
+            Console.WriteLine("\nReplace _ and . with whitespaces? [y/n] (default: {0}): ", ((returnWhiteSpace.ToLower().CompareTo("true") == 0) ? "Y" : "N"));
             string newSettingsWhiteSpaces = Console.ReadLine();
+
+            Console.WriteLine("\nRemove splitted files? [y/n] (default: {0}): ", ((removeSplitted.ToLower().CompareTo("true") == 0) ? "Y" : "N"));
+            string newRemoveSplitted = Console.ReadLine();
 
             Console.WriteLine("\nSave as default settings? [y/n] (default: N): ");
             string newSettings = Console.ReadLine();
@@ -192,9 +196,11 @@ namespace ffmpegSplitter
             if (!string.IsNullOrEmpty(newSizeSplit) && !string.IsNullOrWhiteSpace(newSizeSplit)) splitSize = newSizeSplit;
             if (!string.IsNullOrEmpty(newFormat) && !string.IsNullOrWhiteSpace(newFormat)) format = newFormat;
             if (!string.IsNullOrEmpty(newSettingsWhiteSpaces) && !string.IsNullOrWhiteSpace(newSettingsWhiteSpaces))
-                if (newSettingsWhiteSpaces.CompareTo("y") == 0) returnWhiteSpace = true.ToString();
+                if (newSettingsWhiteSpaces.ToLower().CompareTo("y") == 0) returnWhiteSpace = "True";
+            if (!string.IsNullOrEmpty(newRemoveSplitted) && !string.IsNullOrWhiteSpace(newRemoveSplitted))
+                if (newRemoveSplitted.ToLower().CompareTo("y") == 0) removeSplitted = "True";
             if (!string.IsNullOrEmpty(ignoreSkipSetting) && !string.IsNullOrWhiteSpace(ignoreSkipSetting))
-                if (ignoreSkipSetting.CompareTo("y") == 0) ignoreSkip = true;
+                if (ignoreSkipSetting.ToLower().CompareTo("y") == 0) ignoreSkip = true;
             if (!string.IsNullOrEmpty(newSettings) && !string.IsNullOrWhiteSpace(newSettings))
             {
                 if(string.Compare(newSettings.ToLower(), "y") == 0)
@@ -206,6 +212,7 @@ namespace ffmpegSplitter
                     AddUpdateAppSettings("sizeSplit", splitSize);
                     AddUpdateAppSettings("format", format);
                     AddUpdateAppSettings("returnWhiteSpaces", returnWhiteSpace);
+                    AddUpdateAppSettings("removeConverted", removeSplitted);
                 }
             }
 
@@ -252,8 +259,9 @@ namespace ffmpegSplitter
             Console.WriteLine("Video source path: " + srcDir);
             Console.WriteLine("Video output path: " + outDir);
             Console.WriteLine("Max. video filesize: " + splitSize + " MB");
-            Console.WriteLine("Ignore skipping, convert anyway: " + (ignoreSkipSetting.CompareTo("y") == 0).ToString());
-            Console.WriteLine("Replace . and _ with whitespaces: " + (ignoreSkipSetting.CompareTo("y") == 0).ToString());
+            Console.WriteLine("Ignore skipping, convert anyway: " + (ignoreSkipSetting.ToLower().CompareTo("y") == 0).ToString());
+            Console.WriteLine("Replace . and _ with whitespaces: " + (returnWhiteSpace.ToLower().CompareTo("y") == 0).ToString());
+            Console.WriteLine("Remove splitted: " + (removeSplitted.ToLower().CompareTo("y") == 0).ToString());
             Console.Write("Convert only: " + format.ToUpper() + " files");
 
             breakLine();
@@ -280,9 +288,53 @@ namespace ffmpegSplitter
             }
             else clean = true;
 
-            if(clean) Directory.Delete(tmpDir, true);
+            try
+            {
+                try
+                {
+                    if (clean) Directory.Delete(tmpDir, true);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Temporary folder is in use and couldn't be removed!");
+                    foreach (var f in files)
+                    {
+                        File.Delete(f);
+                        Console.WriteLine("{0} has been deleted", f);
+                    }
+                }
 
-            Console.WriteLine("Temporary data has been removed!");
+                Console.WriteLine("Temporary data has been removed!");
+            }
+            catch (Exception e)
+            {
+                string errorFile = string.Format(@"{0}\error_TmpDir.txt", tmpDir);
+                using (StreamWriter writer = new StreamWriter(errorFile, true))
+                {
+                    writer.WriteLine("-----------------------------------------------------------------------------");
+                    writer.WriteLine("Date : " + DateTime.Now.ToString());
+                    writer.WriteLine();
+
+                    while (e != null)
+                    {
+                        writer.WriteLine(e.GetType().FullName);
+                        writer.WriteLine("Message : " + e.Message);
+                        writer.WriteLine("StackTrace : " + e.StackTrace);
+
+                        e = e.InnerException;
+                    }
+                }
+                Console.WriteLine("Temporary folder is in use and couldn't be removed!");
+            }
+
+            if(Convert.ToBoolean(removeSplitted))
+            {
+                foreach (var item in videos.FindAll(x => x._skip == false))
+                {
+                    File.Delete(item.path);
+                    Console.WriteLine("{0} has been deleted", item.name);
+                }
+            }
         }
 
         static void consoleCommand(string exe, string command, bool newShell = true)
@@ -408,7 +460,7 @@ namespace ffmpegSplitter
             //draw totals
             Console.CursorLeft = 35;
             Console.BackgroundColor = ConsoleColor.Black;
-            Console.Write(name + " (part " +progress.ToString() + " of " + total.ToString() + ")    "); //blanks at the end remove any excess
+            Console.WriteLine(name + " (part " +progress.ToString() + " of " + total.ToString() + ")    "); //blanks at the end remove any excess
         }
 
         static void splitFiles()
@@ -437,7 +489,7 @@ namespace ffmpegSplitter
             {
                 foreach (var video in videos.FindAll(x => x._skip == false))
                 {
-                    progress.Report((double)videoNow / videos.Count);
+                    progress.Report((double)videoNow / videosToSplit);
                     for(int i = 0, max = video._splitter.Count; i < max; i++)
                     {
                         string tempName = video.name + "_p" + Filler((i + 1)) + "." + convertTo;
@@ -455,7 +507,7 @@ namespace ffmpegSplitter
                                                         tEnd.Hours,
                                                         tEnd.Minutes,
                                                         tEnd.Seconds);
-                        string command = string.Format("-i {0} -ss {1} -to {2} -c copy {3}", video.path, startTime, endTime, outPath);
+                        string command = string.Format("-i \"{0}\" -ss {1} -to {2} -c copy \"{3}\"", video.path, startTime, endTime, outPath);
 
                         drawTextProgressBar((i + 1), max, video.name);
 
@@ -463,6 +515,7 @@ namespace ffmpegSplitter
 
                     }
                     videoNow++;
+
                 }
             }
             Console.WriteLine("Done.");

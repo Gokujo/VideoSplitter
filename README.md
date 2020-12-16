@@ -4,7 +4,7 @@
 
 Simple video splitter for WhatsApp, Telegram and etc. You just need to set up the max. file size and this app will split video(s) fast and automatically.
 
-It's a console app, so you have to type all params in a console. Don't worry those are just a few.
+It's a console app, so you have to type all params in a console. Don't worry those are just a few and you don't have to retype settings every time on start.
 
 # Requirements
 
@@ -18,10 +18,11 @@ It's a console app, so you have to type all params in a console. Don't worry tho
 - Path to video output dir (folder)
 - Path to temp files dir (folder)
 - Max. filesize in MB
-- Search for especially video extension (mp4, avi, flv, wmv, mkv - only supported)
+- Search for especially video extension (mp4, avi, flv, wmv, mkv, ... - I guess any video is supported by FFMpeg)
 - Replace . and \_ with whitespaces for splitted videos
+- Remove source video that was used for splitting
 
-You can apply custom settings even before the first start. Open <kbd>ffmpegSplitter.exe.config</kbd> with editor or notepad and find those lines:
+You can apply custom settings even before the first start. Or even if the script won't save them. Open <kbd>ffmpegSplitter.exe.config</kbd> with editor or notepad and find those lines:
 ![Screenshot 5](./ScreenShots/5.png)
 Find **appSettings** and for each key you can put your own lines into it.
 
@@ -29,7 +30,7 @@ Find **appSettings** and for each key you can put your own lines into it.
 
 To split a video, you need to specify the exact file size limit in MB. The script determines how many files the video file should be splitted into based on the specified file size. However, the split is not exactly based on the file size, but on the uniformity of the video duration.
 
-**For example**: a **6.5 GB** video file with a duration of **3 hours**. The file will be splitted into **6** parts with a duration of **30 minutes**. The last split of the video file in practice turns out to be larger and longer than the previous splits, since they retain the difference in milliseconds that is possible during splitting.
+**For example**: a **6.5 GB** video file with a duration of **3 hours**. The file will be splitted into **6** parts with a duration of **30 minutes** and size of **1.08 GB**. The last split of the video file in practice turns out to be larger and longer than the previous splits, since they retain the difference in milliseconds that is possible during splitting.
 
 You need the FFMPEG library for Windows so that the script could processe the video correctly.
 

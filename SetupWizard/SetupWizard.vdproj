@@ -238,13 +238,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7B1C8BD9B5B3ADBDCF0530EFCC22D50A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3C62AF5ED5F2430F803FF953E961DD02"
+        "OwnerKey" = "8:_9F11B6E52E160819032F44B40DD9A321"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -256,13 +250,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_27EDAA44FC4A3C79E1DF5C4540CD21DF"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9613121E85FAAA4F581AE41EA8580AEA"
+        "OwnerKey" = "8:_DE481861A9A3BA5FAF212687E3C4C8A9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -274,31 +262,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_059E374373783E556B924694900A5442"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_70CF87866EEF80E32AA67DC4FE563DE7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_16F6DF807BBBA73A49ABB77179C8F501"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DE481861A9A3BA5FAF212687E3C4C8A9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_13BE9225B368564B8C235114E97882AE"
+        "OwnerKey" = "8:_9613121E85FAAA4F581AE41EA8580AEA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -310,7 +274,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_17A57D20699886B4D3E9F4A22E783E7B"
+        "OwnerKey" = "8:_70CF87866EEF80E32AA67DC4FE563DE7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -328,7 +292,37 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9F11B6E52E160819032F44B40DD9A321"
+        "OwnerKey" = "8:_27EDAA44FC4A3C79E1DF5C4540CD21DF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_17A57D20699886B4D3E9F4A22E783E7B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_16F6DF807BBBA73A49ABB77179C8F501"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_13BE9225B368564B8C235114E97882AE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_059E374373783E556B924694900A5442"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3C62AF5ED5F2430F803FF953E961DD02"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -367,6 +361,12 @@
         "OwnerKey" = "8:_2B7FD3FD842E848573985C44FC0FD2DD"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7B1C8BD9B5B3ADBDCF0530EFCC22D50A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -385,6 +385,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -401,6 +409,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1168,15 +1184,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:VideoSplitter"
-        "ProductCode" = "8:{0162FFA1-36F4-4A60-8028-D54D783DAC64}"
-        "PackageCode" = "8:{8FA565A6-3ED0-407F-943B-4C66BDA2B640}"
+        "ProductCode" = "8:{B1DF1121-EF78-42CC-A543-5D0D823559C7}"
+        "PackageCode" = "8:{A8B54FEA-147D-401A-9182-33018013E6B6}"
         "UpgradeCode" = "8:{3C1E3B89-3F2B-4264-9911-871E9465406C}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.1.1"
+        "ProductVersion" = "8:1.2.0"
         "Manufacturer" = "8:DevCraft"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/Gokujo/VideoSplitter"
@@ -1718,7 +1734,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3C62AF5ED5F2430F803FF953E961DD02"
             {
-            "SourcePath" = "8:..\\ffmpegSplitter\\obj\\Release\\ffmpegSplitter.exe"
+            "SourcePath" = "8:..\\ffmpegSplitter\\obj\\Debug\\ffmpegSplitter.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B484341E567446289540BCF12647BCFF"

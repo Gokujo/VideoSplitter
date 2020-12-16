@@ -33,4 +33,3 @@ C:\Users\maxim_harder.JAS\source\repos\ffmpegSplitter\ffmpegSplitter\obj\Debug\f
 C:\Users\maxim_harder.JAS\source\repos\ffmpegSplitter\ffmpegSplitter\obj\Debug\ffmpegSplitter.pdb
 C:\Users\maxim_harder.JAS\source\repos\ffmpegSplitter\ffmpegSplitter\bin\Debug\NReco.VideoInfo.LT.dll
 C:\Users\maxim_harder.JAS\source\repos\ffmpegSplitter\ffmpegSplitter\bin\Debug\NReco.VideoInfo.LT.xml
-C:\Users\maxim_harder.JAS\source\repos\ffmpegSplitter\ffmpegSplitter\obj\Debug\ffmpegSplitter.csprojAssemblyReference.cache
