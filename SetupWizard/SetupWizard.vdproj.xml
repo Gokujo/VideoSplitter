@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployProject>
+  <VSVersion value="800" />
+  <ProjectType value="{978C614F-708E-4E1A-B201-565925725DBA}" />
+  <IsWebType value="FALSE" />
+  <ProjectName value="SetupWizard" />
+  <LanguageId value="1033" />
+  <CodePage value="1252" />
+  <UILanguageId value="1033" />
+  <SccProjectName value="" />
+  <SccLocalPath value="" />
+  <SccAuxPath value="" />
+  <SccProvider value="" />
+  <Hierarchy>
+    <Entry>
+      <MsmKey value="_059E374373783E556B924694900A5442" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_059E374373783E556B924694900A5442" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_13BE9225B368564B8C235114E97882AE" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_13BE9225B368564B8C235114E97882AE" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_16F6DF807BBBA73A49ABB77179C8F501" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_17A57D20699886B4D3E9F4A22E783E7B" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_17A57D20699886B4D3E9F4A22E783E7B" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_23628DF8751C49458EC2D4E241853FA4" />
+      <OwnerKey value="_UNDEFINED" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_27EDAA44FC4A3C79E1DF5C4540CD21DF" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_27EDAA44FC4A3C79E1DF5C4540CD21DF" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_2B7FD3FD842E848573985C44FC0FD2DD" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <OwnerKey value="_UNDEFINED" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_41BC8C8E1AB45278F3AC5045D73A82E7" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_41BC8C8E1AB45278F3AC5045D73A82E7" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_688FEC57D4B5F1D04A7A8D8BCA115BA4" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_6BDAD13ED5523E49930FE61373B7D808" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_70CF87866EEF80E32AA67DC4FE563DE7" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_70CF87866EEF80E32AA67DC4FE563DE7" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_7B1C8BD9B5B3ADBDCF0530EFCC22D50A" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_8C43D6E2C25F2D1EA7C372948ED6CC4E" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_8C43D6E2C25F2D1EA7C372948ED6CC4E" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_9337DE7536EA911A2BCBCD643ABF2FE5" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_9337DE7536EA911A2BCBCD643ABF2FE5" />
+      <OwnerKey value="_D6B1B86AC990F07AEE0EE2E42EBAB2AD" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_9337DE7536EA911A2BCBCD643ABF2FE5" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_9613121E85FAAA4F581AE41EA8580AEA" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_9613121E85FAAA4F581AE41EA8580AEA" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_976CE4E9B87A933C46146D0BA008E5B5" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_976CE4E9B87A933C46146D0BA008E5B5" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_9F11B6E52E160819032F44B40DD9A321" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_9F11B6E52E160819032F44B40DD9A321" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_D6B1B86AC990F07AEE0EE2E42EBAB2AD" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_D6B1B86AC990F07AEE0EE2E42EBAB2AD" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_DE481861A9A3BA5FAF212687E3C4C8A9" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_F1298FD33907FA8379564303831BCEEB" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_F73CE9D080EC6FD1829D3ECFB722A46D" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_F73CE9D080EC6FD1829D3ECFB722A46D" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_9F11B6E52E160819032F44B40DD9A321" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_7B1C8BD9B5B3ADBDCF0530EFCC22D50A" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_2B7FD3FD842E848573985C44FC0FD2DD" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_6BDAD13ED5523E49930FE61373B7D808" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_9337DE7536EA911A2BCBCD643ABF2FE5" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_D6B1B86AC990F07AEE0EE2E42EBAB2AD" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_F73CE9D080EC6FD1829D3ECFB722A46D" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_F1298FD33907FA8379564303831BCEEB" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_3C62AF5ED5F2430F803FF953E961DD02" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_059E374373783E556B924694900A5442" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_13BE9225B368564B8C235114E97882AE" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_16F6DF807BBBA73A49ABB77179C8F501" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_17A57D20699886B4D3E9F4A22E783E7B" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_27EDAA44FC4A3C79E1DF5C4540CD21DF" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_41BC8C8E1AB45278F3AC5045D73A82E7" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_688FEC57D4B5F1D04A7A8D8BCA115BA4" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_70CF87866EEF80E32AA67DC4FE563DE7" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_8C43D6E2C25F2D1EA7C372948ED6CC4E" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_9613121E85FAAA4F581AE41EA8580AEA" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_976CE4E9B87A933C46146D0BA008E5B5" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_DE481861A9A3BA5FAF212687E3C4C8A9" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+    <Entry>
+      <MsmKey value="_UNDEFINED" />
+      <OwnerKey value="_ED22D20CC2EAE14339A06900CF2D0D76" />
+      <MsmSig value="_UNDEFINED" />
+    </Entry>
+  </Hierarchy>
+  <Configurations>
+    <Debug>
+      <DisplayName value="Debug" />
+      <IsDebugOnly value="TRUE" />
+      <IsReleaseOnly value="FALSE" />
+      <OutputFilename value="Debug\Setup.msi" />
+      <PackageFilesAs value="2" />
+      <PackageFileSize value="-2147483648" />
+      <CabType value="1" />
+      <Compression value="3" />
+      <SignOutput value="FALSE" />
+      <CertificateFile value="" />
+      <PrivateKeyFile value="" />
+      <TimeStampServer value="" />
+      <InstallerBootstrapper value="2" />
+      <BootstrapperCfg>
+        <Enabled value="TRUE" />
+        <PromptEnabled value="TRUE" />
+        <PrerequisitesLocation value="1" />
+        <Url value="" />
+        <ComponentsUrl value="" />
+        <Items>
+          <_x002E_NETFramework_x002C_Version_x003D_v4.6.1>
+            <Name value="Microsoft .NET Framework 4.6.1 (x86 and x64)" />
+            <ProductCode value=".NETFramework,Version=v4.6.1" />
+          </_x002E_NETFramework_x002C_Version_x003D_v4.6.1>
+        </Items>
+      </BootstrapperCfg>
+    </Debug>
+    <Release>
+      <DisplayName value="Release" />
+      <IsDebugOnly value="FALSE" />
+      <IsReleaseOnly value="TRUE" />
+      <OutputFilename value="Release\SetupWizard.msi" />
+      <PackageFilesAs value="2" />
+      <PackageFileSize value="-2147483648" />
+      <CabType value="1" />
+      <Compression value="2" />
+      <SignOutput value="FALSE" />
+      <CertificateFile value="" />
+      <PrivateKeyFile value="" />
+      <TimeStampServer value="" />
+      <InstallerBootstrapper value="2" />
+      <BootstrapperCfg>
+        <Enabled value="TRUE" />
+        <PromptEnabled value="TRUE" />
+        <PrerequisitesLocation value="1" />
+        <Url value="" />
+        <ComponentsUrl value="" />
+        <Items>
+          <_x002E_NETFramework_x002C_Version_x003D_v4.6.1>
+            <Name value="Microsoft .NET Framework 4.6.1 (x86 and x64)" />
+            <ProductCode value=".NETFramework,Version=v4.6.1" />
+          </_x002E_NETFramework_x002C_Version_x003D_v4.6.1>
+        </Items>
+      </BootstrapperCfg>
+    </Release>
+  </Configurations>
+  <Deployable>
+    <CustomAction>
+    </CustomAction>
+    <DefaultFeature>
+      <Name value="DefaultFeature" />
+      <Title value="" />
+      <Description value="" />
+    </DefaultFeature>
+    <ExternalPersistence>
+      <LaunchCondition>
+        <_CEB151A6050348E195015348090E13B1>
+          <Name value=".NET Framework" />
+          <Message value="[VSDNETMSG]" />
+          <FrameworkVersion value=".NETFramework,Version=v4.6.1" />
+          <AllowLaterVersions value="FALSE" />
+          <InstallUrl value="http://go.microsoft.com/fwlink/?LinkId=671728" />
+        </_CEB151A6050348E195015348090E13B1>
+      </LaunchCondition>
+    </ExternalPersistence>
+    <File>
+      <_059E374373783E556B924694900A5442>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Security.SecureString, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_059E374373783E556B924694900A5442>
+            <Name value="System.Security.SecureString.dll" />
+            <Attributes value="512" />
+          </_059E374373783E556B924694900A5442>
+        </ScatterAssemblies>
+        <SourcePath value="System.Security.SecureString.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_059E374373783E556B924694900A5442>
+      <_13BE9225B368564B8C235114E97882AE>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_13BE9225B368564B8C235114E97882AE>
+            <Name value="System.Runtime.InteropServices.RuntimeInformation.dll" />
+            <Attributes value="512" />
+          </_13BE9225B368564B8C235114E97882AE>
+        </ScatterAssemblies>
+        <SourcePath value="System.Runtime.InteropServices.RuntimeInformation.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_13BE9225B368564B8C235114E97882AE>
+      <_16F6DF807BBBA73A49ABB77179C8F501>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Runtime.Serialization.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_16F6DF807BBBA73A49ABB77179C8F501>
+            <Name value="System.Runtime.Serialization.Xml.dll" />
+            <Attributes value="512" />
+          </_16F6DF807BBBA73A49ABB77179C8F501>
+        </ScatterAssemblies>
+        <SourcePath value="System.Runtime.Serialization.Xml.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_16F6DF807BBBA73A49ABB77179C8F501>
+      <_17A57D20699886B4D3E9F4A22E783E7B>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Globalization.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_17A57D20699886B4D3E9F4A22E783E7B>
+            <Name value="System.Globalization.Extensions.dll" />
+            <Attributes value="512" />
+          </_17A57D20699886B4D3E9F4A22E783E7B>
+        </ScatterAssemblies>
+        <SourcePath value="System.Globalization.Extensions.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_17A57D20699886B4D3E9F4A22E783E7B>
+      <_23628DF8751C49458EC2D4E241853FA4>
+        <SourcePath value="..\ffmpegSplitter\icon.ico" />
+        <TargetName value="icon.ico" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="FALSE" />
+        <IsolateTo value="" />
+      </_23628DF8751C49458EC2D4E241853FA4>
+      <_27EDAA44FC4A3C79E1DF5C4540CD21DF>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Xml.XPath.XDocument, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_27EDAA44FC4A3C79E1DF5C4540CD21DF>
+            <Name value="System.Xml.XPath.XDocument.dll" />
+            <Attributes value="512" />
+          </_27EDAA44FC4A3C79E1DF5C4540CD21DF>
+        </ScatterAssemblies>
+        <SourcePath value="System.Xml.XPath.XDocument.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_27EDAA44FC4A3C79E1DF5C4540CD21DF>
+      <_2B7FD3FD842E848573985C44FC0FD2DD>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="FALSE" />
+        <AssemblyAsmDisplayName value="System.Runtime.Serialization.Primitives, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <ScatterAssemblies>
+        </ScatterAssemblies>
+        <SourcePath value="System.Runtime.Serialization.Primitives.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_2B7FD3FD842E848573985C44FC0FD2DD>
+      <_41BC8C8E1AB45278F3AC5045D73A82E7>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Diagnostics.StackTrace, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_41BC8C8E1AB45278F3AC5045D73A82E7>
+            <Name value="System.Diagnostics.StackTrace.dll" />
+            <Attributes value="512" />
+          </_41BC8C8E1AB45278F3AC5045D73A82E7>
+        </ScatterAssemblies>
+        <SourcePath value="System.Diagnostics.StackTrace.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_41BC8C8E1AB45278F3AC5045D73A82E7>
+      <_688FEC57D4B5F1D04A7A8D8BCA115BA4>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Diagnostics.Tracing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_688FEC57D4B5F1D04A7A8D8BCA115BA4>
+            <Name value="System.Diagnostics.Tracing.dll" />
+            <Attributes value="512" />
+          </_688FEC57D4B5F1D04A7A8D8BCA115BA4>
+        </ScatterAssemblies>
+        <SourcePath value="System.Diagnostics.Tracing.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_688FEC57D4B5F1D04A7A8D8BCA115BA4>
+      <_6BDAD13ED5523E49930FE61373B7D808>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="FALSE" />
+        <AssemblyAsmDisplayName value="System.Runtime.Serialization.Xml, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <ScatterAssemblies>
+        </ScatterAssemblies>
+        <SourcePath value="System.Runtime.Serialization.Xml.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_6BDAD13ED5523E49930FE61373B7D808>
+      <_70CF87866EEF80E32AA67DC4FE563DE7>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Security.Cryptography.Algorithms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_70CF87866EEF80E32AA67DC4FE563DE7>
+            <Name value="System.Security.Cryptography.Algorithms.dll" />
+            <Attributes value="512" />
+          </_70CF87866EEF80E32AA67DC4FE563DE7>
+        </ScatterAssemblies>
+        <SourcePath value="System.Security.Cryptography.Algorithms.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_70CF87866EEF80E32AA67DC4FE563DE7>
+      <_7B1C8BD9B5B3ADBDCF0530EFCC22D50A>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="FALSE" />
+        <AssemblyAsmDisplayName value="System.Diagnostics.Tracing, Version=4.0.20.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <ScatterAssemblies>
+        </ScatterAssemblies>
+        <SourcePath value="System.Diagnostics.Tracing.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_7B1C8BD9B5B3ADBDCF0530EFCC22D50A>
+      <_8C43D6E2C25F2D1EA7C372948ED6CC4E>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Net.Sockets, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_8C43D6E2C25F2D1EA7C372948ED6CC4E>
+            <Name value="System.Net.Sockets.dll" />
+            <Attributes value="512" />
+          </_8C43D6E2C25F2D1EA7C372948ED6CC4E>
+        </ScatterAssemblies>
+        <SourcePath value="System.Net.Sockets.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_8C43D6E2C25F2D1EA7C372948ED6CC4E>
+      <_9337DE7536EA911A2BCBCD643ABF2FE5>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="FALSE" />
+        <AssemblyAsmDisplayName value="System.IO.Compression, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <ScatterAssemblies>
+        </ScatterAssemblies>
+        <SourcePath value="System.IO.Compression.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_9337DE7536EA911A2BCBCD643ABF2FE5>
+      <_9613121E85FAAA4F581AE41EA8580AEA>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.ValueTuple, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_9613121E85FAAA4F581AE41EA8580AEA>
+            <Name value="System.ValueTuple.dll" />
+            <Attributes value="512" />
+          </_9613121E85FAAA4F581AE41EA8580AEA>
+        </ScatterAssemblies>
+        <SourcePath value="System.ValueTuple.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_9613121E85FAAA4F581AE41EA8580AEA>
+      <_976CE4E9B87A933C46146D0BA008E5B5>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Threading.Overlapped, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_976CE4E9B87A933C46146D0BA008E5B5>
+            <Name value="System.Threading.Overlapped.dll" />
+            <Attributes value="512" />
+          </_976CE4E9B87A933C46146D0BA008E5B5>
+        </ScatterAssemblies>
+        <SourcePath value="System.Threading.Overlapped.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_976CE4E9B87A933C46146D0BA008E5B5>
+      <_9F11B6E52E160819032F44B40DD9A321>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Data.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_9F11B6E52E160819032F44B40DD9A321>
+            <Name value="System.Data.Common.dll" />
+            <Attributes value="512" />
+          </_9F11B6E52E160819032F44B40DD9A321>
+        </ScatterAssemblies>
+        <SourcePath value="System.Data.Common.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_9F11B6E52E160819032F44B40DD9A321>
+      <_D6B1B86AC990F07AEE0EE2E42EBAB2AD>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="FALSE" />
+        <AssemblyAsmDisplayName value="System.IO.Compression.FileSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+        <ScatterAssemblies>
+        </ScatterAssemblies>
+        <SourcePath value="System.IO.Compression.FileSystem.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_D6B1B86AC990F07AEE0EE2E42EBAB2AD>
+      <_DE481861A9A3BA5FAF212687E3C4C8A9>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="System.Runtime.Serialization.Primitives, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_DE481861A9A3BA5FAF212687E3C4C8A9>
+            <Name value="System.Runtime.Serialization.Primitives.dll" />
+            <Attributes value="512" />
+          </_DE481861A9A3BA5FAF212687E3C4C8A9>
+        </ScatterAssemblies>
+        <SourcePath value="System.Runtime.Serialization.Primitives.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_DE481861A9A3BA5FAF212687E3C4C8A9>
+      <_ED22D20CC2EAE14339A06900CF2D0D76>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="TRUE" />
+        <AssemblyAsmDisplayName value="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+          <_ED22D20CC2EAE14339A06900CF2D0D76>
+            <Name value="netstandard.dll" />
+            <Attributes value="512" />
+          </_ED22D20CC2EAE14339A06900CF2D0D76>
+        </ScatterAssemblies>
+        <SourcePath value="netstandard.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_ED22D20CC2EAE14339A06900CF2D0D76>
+      <_F1298FD33907FA8379564303831BCEEB>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="FALSE" />
+        <AssemblyAsmDisplayName value="NReco.VideoInfo.LT, Version=1.1.0.0, Culture=neutral, PublicKeyToken=8f59ee36d2987295, processorArchitecture=MSIL" />
+        <ScatterAssemblies>
+        </ScatterAssemblies>
+        <SourcePath value="NReco.VideoInfo.LT.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_F1298FD33907FA8379564303831BCEEB>
+      <_F73CE9D080EC6FD1829D3ECFB722A46D>
+        <AssemblyRegister value="1" />
+        <AssemblyIsInGAC value="FALSE" />
+        <AssemblyAsmDisplayName value="System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <ScatterAssemblies>
+        </ScatterAssemblies>
+        <SourcePath value="System.Net.Http.dll" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="TRUE" />
+        <IsolateTo value="" />
+      </_F73CE9D080EC6FD1829D3ECFB722A46D>
+    </File>
+    <FileType>
+    </FileType>
+    <Folder>
+      <_B484341E567446289540BCF12647BCFF>
+        <DefaultLocation value="[ProgramFilesFolder][Manufacturer]\[ProductName]" />
+        <Name value="#1925" />
+        <AlwaysCreate value="FALSE" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Property value="TARGETDIR" />
+        <Folders>
+        </Folders>
+      </_B484341E567446289540BCF12647BCFF>
+      <_C1FA4A8EC42744CE9177E637149EC27C>
+        <Name value="#1916" />
+        <AlwaysCreate value="FALSE" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Property value="DesktopFolder" />
+        <Folders>
+        </Folders>
+      </_C1FA4A8EC42744CE9177E637149EC27C>
+      <_F42E3C6740054250B62517CDCB68F618>
+        <Name value="#1919" />
+        <AlwaysCreate value="FALSE" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Property value="ProgramMenuFolder" />
+        <Folders>
+          <_98C2C7900F034395B70EB299F010C592>
+            <Name value="DevCraft" />
+            <AlwaysCreate value="FALSE" />
+            <Condition value="" />
+            <Transitive value="FALSE" />
+            <Property value="_FAE9183584BB4B64B1FC7967ABCC0B12" />
+            <Folders>
+            </Folders>
+          </_98C2C7900F034395B70EB299F010C592>
+        </Folders>
+      </_F42E3C6740054250B62517CDCB68F618>
+    </Folder>
+    <LaunchCondition>
+    </LaunchCondition>
+    <Locator>
+    </Locator>
+    <MsiBootstrapper>
+      <LangId value="1033" />
+      <RequiresElevation value="FALSE" />
+    </MsiBootstrapper>
+    <Product>
+      <Name value="Microsoft Visual Studio" />
+      <ProductName value="VideoSplitter" />
+      <ProductCode value="{4CE2C92E-589F-4679-868E-0836C559A538}" />
+      <PackageCode value="{D19BC1BB-ADD6-4534-A9B4-662CA2198373}" />
+      <UpgradeCode value="{3C1E3B89-3F2B-4264-9911-871E9465406C}" />
+      <AspNetVersion value="2.0.50727.0" />
+      <RestartWWWService value="FALSE" />
+      <RemovePreviousVersions value="TRUE" />
+      <DetectNewerInstalledVersion value="TRUE" />
+      <InstallAllUsers value="TRUE" />
+      <ProductVersion value="1.3.0" />
+      <Manufacturer value="DevCraft" />
+      <ARPHELPTELEPHONE value="" />
+      <ARPHELPLINK value="https://github.com/Gokujo/VideoSplitter" />
+      <Title value="VideoSplitter" />
+      <Subject value="" />
+      <ARPCONTACT value="Maxim Harder" />
+      <Keywords value="fmpeg, video, splitter, ffprobe, nreco, csharp" />
+      <ARPCOMMENTS value="Simple video splitter by filesize with help of FFMpeg" />
+      <ARPURLINFOABOUT value="https://devcraft.club" />
+      <ARPPRODUCTICON value="_23628DF8751C49458EC2D4E241853FA4" />
+      <ARPIconIndex value="0" />
+      <SearchPath value="" />
+      <UseSystemSearchPath value="TRUE" />
+      <TargetPlatform value="0" />
+      <PreBuildEvent value="" />
+      <PostBuildEvent value="" />
+      <RunPostBuildEvent value="0" />
+    </Product>
+    <Registry>
+      <HKLM>
+        <Keys>
+          <_57FDAAF2DD7B41DCB54AABF5BC8F8B03>
+            <Name value="Software" />
+            <Condition value="" />
+            <AlwaysCreate value="FALSE" />
+            <DeleteAtUninstall value="FALSE" />
+            <Transitive value="FALSE" />
+            <Keys>
+              <_21B85A569938417FAC9F10B4D2C487D3>
+                <Name value="[Manufacturer]" />
+                <Condition value="" />
+                <AlwaysCreate value="FALSE" />
+                <DeleteAtUninstall value="FALSE" />
+                <Transitive value="FALSE" />
+                <Keys>
+                </Keys>
+                <Values>
+                </Values>
+              </_21B85A569938417FAC9F10B4D2C487D3>
+            </Keys>
+            <Values>
+            </Values>
+          </_57FDAAF2DD7B41DCB54AABF5BC8F8B03>
+        </Keys>
+      </HKLM>
+      <HKCU>
+        <Keys>
+          <_4ADB8760106342F9A320F12E0DD389FA>
+            <Name value="Software" />
+            <Condition value="" />
+            <AlwaysCreate value="FALSE" />
+            <DeleteAtUninstall value="FALSE" />
+            <Transitive value="FALSE" />
+            <Keys>
+              <_CFBAAF9B42084A2A952A5775CA984252>
+                <Name value="[Manufacturer]" />
+                <Condition value="" />
+                <AlwaysCreate value="FALSE" />
+                <DeleteAtUninstall value="FALSE" />
+                <Transitive value="FALSE" />
+                <Keys>
+                </Keys>
+                <Values>
+                </Values>
+              </_CFBAAF9B42084A2A952A5775CA984252>
+            </Keys>
+            <Values>
+            </Values>
+          </_4ADB8760106342F9A320F12E0DD389FA>
+        </Keys>
+      </HKCU>
+      <HKCR>
+        <Keys>
+        </Keys>
+      </HKCR>
+      <HKU>
+        <Keys>
+        </Keys>
+      </HKU>
+      <HKPU>
+        <Keys>
+        </Keys>
+      </HKPU>
+    </Registry>
+    <Sequences>
+    </Sequences>
+    <Shortcut>
+      <_0B0B3FB701E6409C81336E912EC8070D>
+        <Name value="VideoSplitter" />
+        <Arguments value="" />
+        <Description value="" />
+        <ShowCmd value="1" />
+        <IconIndex value="0" />
+        <Transitive value="FALSE" />
+        <Target value="_3C62AF5ED5F2430F803FF953E961DD02" />
+        <Folder value="_98C2C7900F034395B70EB299F010C592" />
+        <WorkingFolder value="_B484341E567446289540BCF12647BCFF" />
+        <Icon value="_23628DF8751C49458EC2D4E241853FA4" />
+        <Feature value="" />
+      </_0B0B3FB701E6409C81336E912EC8070D>
+      <_7EDF11CAB7484729BC4974AC9EDCF4F2>
+        <Name value="VideoSplitter" />
+        <Arguments value="" />
+        <Description value="" />
+        <ShowCmd value="1" />
+        <IconIndex value="0" />
+        <Transitive value="FALSE" />
+        <Target value="_3C62AF5ED5F2430F803FF953E961DD02" />
+        <Folder value="_C1FA4A8EC42744CE9177E637149EC27C" />
+        <WorkingFolder value="_B484341E567446289540BCF12647BCFF" />
+        <Icon value="_23628DF8751C49458EC2D4E241853FA4" />
+        <Feature value="" />
+      </_7EDF11CAB7484729BC4974AC9EDCF4F2>
+    </Shortcut>
+    <UserInterface>
+      <_0B996CE887974FDC9A5318FDFA4E06D9>
+        <Name value="#1902" />
+        <Sequence value="2" />
+        <Attributes value="3" />
+        <Dialogs>
+          <_19CE9C3DC15E47AFB2A1268395672A31>
+            <Sequence value="100" />
+            <DisplayName value="Fertig" />
+            <UseDynamicProperties value="TRUE" />
+            <IsDependency value="FALSE" />
+            <SourcePath value="&lt;VsdDialogDir&gt;\VsdAdminFinishedDlg.wid" />
+            <Properties>
+              <BannerBitmap>
+                <Name value="BannerBitmap" />
+                <DisplayName value="#1001" />
+                <Description value="#1101" />
+                <Type value="8" />
+                <ContextData value="Bitmap" />
+                <Attributes value="4" />
+                <Setting value="1" />
+                <UsePlugInResources value="TRUE" />
+              </BannerBitmap>
+            </Properties>
+          </_19CE9C3DC15E47AFB2A1268395672A31>
+        </Dialogs>
+      </_0B996CE887974FDC9A5318FDFA4E06D9>
+      <_0D8E39E820444CFEB1EDEC56099C9454>
+        <Name value="#1901" />
+        <Sequence value="2" />
+        <Attributes value="2" />
+        <Dialogs>
+          <_4F6A13946BA7474F83E6EED2907FDBB0>
+            <Sequence value="100" />
+            <DisplayName value="Status" />
+            <UseDynamicProperties value="TRUE" />
+            <IsDependency value="FALSE" />
+            <SourcePath value="&lt;VsdDialogDir&gt;\VsdAdminProgressDlg.wid" />
+            <Properties>
+              <BannerBitmap>
+                <Name value="BannerBitmap" />
+                <DisplayName value="#1001" />
+                <Description value="#1101" />
+                <Type value="8" />
+                <ContextData value="Bitmap" />
+                <Attributes value="4" />
+                <Setting value="1" />
+                <UsePlugInResources value="TRUE" />
+              </BannerBitmap>
+              <ShowProgress>
+                <Name value="ShowProgress" />
+                <DisplayName value="#1009" />
+                <Description value="#1109" />
+                <Type value="5" />
+                <ContextData value="1;True=1;False=0" />
+                <Attributes value="0" />
+                <Setting value="0" />
+                <Value value="1" />
+                <DefaultValue value="1" />
+                <UsePlugInResources value="TRUE" />
+              </ShowProgress>
+            </Properties>
+          </_4F6A13946BA7474F83E6EED2907FDBB0>
+        </Dialogs>
+      </_0D8E39E820444CFEB1EDEC56099C9454>
+      <_173D468EADAA43EF99B7F1077AAA155E>
+        <UseDynamicProperties value="FALSE" />
+        <IsDependency value="FALSE" />
+        <SourcePath value="&lt;VsdDialogDir&gt;\VsdUserInterface.wim" />
+      </_173D468EADAA43EF99B7F1077AAA155E>
+      <_338AF2E19EE443A78F48B717A04A88C8>
+        <UseDynamicProperties value="FALSE" />
+        <IsDependency value="FALSE" />
+        <SourcePath value="&lt;VsdDialogDir&gt;\VsdBasicDialogs.wim" />
+      </_338AF2E19EE443A78F48B717A04A88C8>
+      <_748513D6265C49E2904E0914D101E271>
+        <Name value="#1901" />
+        <Sequence value="1" />
+        <Attributes value="2" />
+        <Dialogs>
+          <_AE7A34223F434FA3B1D01F9F4D2D47F0>
+            <Sequence value="100" />
+            <DisplayName value="Status" />
+            <UseDynamicProperties value="TRUE" />
+            <IsDependency value="FALSE" />
+            <SourcePath value="&lt;VsdDialogDir&gt;\VsdProgressDlg.wid" />
+            <Properties>
+              <BannerBitmap>
+                <Name value="BannerBitmap" />
+                <DisplayName value="#1001" />
+                <Description value="#1101" />
+                <Type value="8" />
+                <ContextData value="Bitmap" />
+                <Attributes value="4" />
+                <Setting value="1" />
+                <UsePlugInResources value="TRUE" />
+              </BannerBitmap>
+              <ShowProgress>
+                <Name value="ShowProgress" />
+                <DisplayName value="#1009" />
+                <Description value="#1109" />
+                <Type value="5" />
+                <ContextData value="1;True=1;False=0" />
+                <Attributes value="0" />
+                <Setting value="0" />
+                <Value value="1" />
+                <DefaultValue value="1" />
+                <UsePlugInResources value="TRUE" />
+              </ShowProgress>
+            </Properties>
+          </_AE7A34223F434FA3B1D01F9F4D2D47F0>
+        </Dialogs>
+      </_748513D6265C49E2904E0914D101E271>
+      <_85FFF0AF05A94D0CBC31973360F07196>
+        <Name value="#1902" />
+        <Sequence value="1" />
+        <Attributes value="3" />
+        <Dialogs>
+          <_642D4D20FAF34D87A9545328F8546682>
+            <Sequence value="100" />
+            <DisplayName value="Fertig" />
+            <UseDynamicProperties value="TRUE" />
+            <IsDependency value="FALSE" />
+            <SourcePath value="&lt;VsdDialogDir&gt;\VsdFinishedDlg.wid" />
+            <Properties>
+              <BannerBitmap>
+                <Name value="BannerBitmap" />
+                <DisplayName value="#1001" />
+                <Description value="#1101" />
+                <Type value="8" />
+                <ContextData value="Bitmap" />
+                <Attributes value="4" />
+                <Setting value="1" />
+                <UsePlugInResources value="TRUE" />
+              </BannerBitmap>
+              <UpdateText>
+                <Name value="UpdateText" />
+                <DisplayName value="#1058" />
+                <Description value="#1158" />
+                <Type value="15" />
+                <ContextData value="" />
+                <Attributes value="0" />
+                <Setting value="1" />
+                <Value value="#1258" />
+                <DefaultValue value="#1258" />
+                <UsePlugInResources value="TRUE" />
+              </UpdateText>
+            </Properties>
+          </_642D4D20FAF34D87A9545328F8546682>
+        </Dialogs>
+      </_85FFF0AF05A94D0CBC31973360F07196>
+      <_9A5A9EF7A5DB4FF6B6289BC0A1F6D30B>
+        <Name value="#1900" />
+        <Sequence value="1" />
+        <Attributes value="1" />
+        <Dialogs>
+          <_7E60277F18C24196A873B7D07D10818E>
+            <Sequence value="200" />
+            <DisplayName value="Installationsordner" />
+            <UseDynamicProperties value="TRUE" />
+            <IsDependency value="FALSE" />
+            <SourcePath value="&lt;VsdDialogDir&gt;\VsdFolderDlg.wid" />
+            <Properties>
+              <BannerBitmap>
+                <Name value="BannerBitmap" />
+                <DisplayName value="#1001" />
+                <Description value="#1101" />
+                <Type value="8" />
+                <ContextData value="Bitmap" />
+                <Attributes value="4" />
+                <Setting value="1" />
+                <UsePlugInResources value="TRUE" />
+              </BannerBitmap>
+              <InstallAllUsersVisible>
+                <Name value="InstallAllUsersVisible" />
+                <DisplayName value="#1059" />
+                <Description value="#1159" />
+                <Type value="5" />
+                <ContextData value="1;True=1;False=0" />
+                <Attributes value="0" />
+                <Setting value="0" />
+                <Value value="1" />
+                <DefaultValue value="1" />
+                <UsePlugInResources value="TRUE" />
+              </InstallAllUsersVisible>
+            </Properties>
+          </_7E60277F18C24196A873B7D07D10818E>
+          <_8685AC691E964B3F9DEDB997DE5FE8B1>
+            <Sequence value="300" />
+            <DisplayName value="Installation bestätigen" />
+            <UseDynamicProperties value="TRUE" />
+            <IsDependency value="FALSE" />
+            <SourcePath value="&lt;VsdDialogDir&gt;\VsdConfirmDlg.wid" />
+            <Properties>
+              <BannerBitmap>
+                <Name value="BannerBitmap" />
+                <DisplayName value="#1001" />
+                <Description value="#1101" />
+                <Type value="8" />
+                <ContextData value="Bitmap" />
+                <Attributes value="4" />
+                <Setting value="1" />
+                <UsePlugInResources value="TRUE" />
+              </BannerBitmap>
+            </Properties>
+          </_8685AC691E964B3F9DEDB997DE5FE8B1>
+          <_C6A9A2791BC244BEBF227D7B23F6876D>
+            <Sequence value="100" />
+            <DisplayName value="Willkommen" />
+            <UseDynamicProperties value="TRUE" />
+            <IsDependency value="FALSE" />
+            <SourcePath value="&lt;VsdDialogDir&gt;\VsdWelcomeDlg.wid" />
+            <Properties>
+              <BannerBitmap>
+                <Name value="BannerBitmap" />
+                <DisplayName value="#1001" />
+                <Description value="#1101" />
+                <Type value="8" />
+                <ContextData value="Bitmap" />
+                <Attributes value="4" />
+                <Setting value="1" />
+                <UsePlugInResources value="TRUE" />
+              </BannerBitmap>
+              <CopyrightWarning>
+                <Name value="CopyrightWarning" />
+                <DisplayName value="#1002" />
+                <Description value="#1102" />
+                <Type value="3" />
+                <ContextData value="" />
+                <Attributes value="0" />
+                <Setting value="1" />
+                <Value value="#1202" />
+                <DefaultValue value="#1202" />
+                <UsePlugInResources value="TRUE" />
+              </CopyrightWarning>
+              <Welcome>
+                <Name value="Welcome" />
+                <DisplayName value="#1003" />
+                <Description value="#1103" />
+                <Type value="3" />
+                <ContextData value="" />
+                <Attributes value="0" />
+                <Setting value="1" />
+                <Value value="#1203" />
+                <DefaultValue value="#1203" />
+                <UsePlugInResources value="TRUE" />
+              </Welcome>
+            </Properties>
+          </_C6A9A2791BC244BEBF227D7B23F6876D>
+        </Dialogs>
+      </_9A5A9EF7A5DB4FF6B6289BC0A1F6D30B>
+      <_DDF39ACF70594647990B8CEC7ECEB7BA>
+        <Name value="#1900" />
+        <Sequence value="2" />
+        <Attributes value="1" />
+        <Dialogs>
+          <_48A0182617B648D8B34BE85E11A492E5>
+            <Sequence value="100" />
+            <DisplayName value="Willkommen" />
+            <UseDynamicProperties value="TRUE" />
+            <IsDependency value="FALSE" />
+            <SourcePath value="&lt;VsdDialogDir&gt;\VsdAdminWelcomeDlg.wid" />
+            <Properties>
+              <BannerBitmap>
+                <Name value="BannerBitmap" />
+                <DisplayName value="#1001" />
+                <Description value="#1101" />
+                <Type value="8" />
+                <ContextData value="Bitmap" />
+                <Attributes value="4" />
+                <Setting value="1" />
+                <UsePlugInResources value="TRUE" />
+              </BannerBitmap>
+              <CopyrightWarning>
+                <Name value="CopyrightWarning" />
+                <DisplayName value="#1002" />
+                <Description value="#1102" />
+                <Type value="3" />
+                <ContextData value="" />
+                <Attributes value="0" />
+                <Setting value="1" />
+                <Value value="#1202" />
+                <DefaultValue value="#1202" />
+                <UsePlugInResources value="TRUE" />
+              </CopyrightWarning>
+              <Welcome>
+                <Name value="Welcome" />
+                <DisplayName value="#1003" />
+                <Description value="#1103" />
+                <Type value="3" />
+                <ContextData value="" />
+                <Attributes value="0" />
+                <Setting value="1" />
+                <Value value="#1203" />
+                <DefaultValue value="#1203" />
+                <UsePlugInResources value="TRUE" />
+              </Welcome>
+            </Properties>
+          </_48A0182617B648D8B34BE85E11A492E5>
+          <_5569DB407025441A9DFA68C31066A737>
+            <Sequence value="300" />
+            <DisplayName value="Installation bestätigen" />
+            <UseDynamicProperties value="TRUE" />
+            <IsDependency value="FALSE" />
+            <SourcePath value="&lt;VsdDialogDir&gt;\VsdAdminConfirmDlg.wid" />
+            <Properties>
+              <BannerBitmap>
+                <Name value="BannerBitmap" />
+                <DisplayName value="#1001" />
+                <Description value="#1101" />
+                <Type value="8" />
+                <ContextData value="Bitmap" />
+                <Attributes value="4" />
+                <Setting value="1" />
+                <UsePlugInResources value="TRUE" />
+              </BannerBitmap>
+            </Properties>
+          </_5569DB407025441A9DFA68C31066A737>
+          <_AFDDE50F1F1C4F7F89E8441A2562EE91>
+            <Sequence value="200" />
+            <DisplayName value="Installationsordner" />
+            <UseDynamicProperties value="TRUE" />
+            <IsDependency value="FALSE" />
+            <SourcePath value="&lt;VsdDialogDir&gt;\VsdAdminFolderDlg.wid" />
+            <Properties>
+              <BannerBitmap>
+                <Name value="BannerBitmap" />
+                <DisplayName value="#1001" />
+                <Description value="#1101" />
+                <Type value="8" />
+                <ContextData value="Bitmap" />
+                <Attributes value="4" />
+                <Setting value="1" />
+                <UsePlugInResources value="TRUE" />
+              </BannerBitmap>
+            </Properties>
+          </_AFDDE50F1F1C4F7F89E8441A2562EE91>
+        </Dialogs>
+      </_DDF39ACF70594647990B8CEC7ECEB7BA>
+    </UserInterface>
+    <MergeModule>
+    </MergeModule>
+    <ProjectOutput>
+      <_3C62AF5ED5F2430F803FF953E961DD02>
+        <SourcePath value="..\ffmpegSplitter\obj\Debug\ffmpegSplitter.exe" />
+        <TargetName value="" />
+        <Tag value="" />
+        <Folder value="_B484341E567446289540BCF12647BCFF" />
+        <Condition value="" />
+        <Transitive value="FALSE" />
+        <Vital value="TRUE" />
+        <ReadOnly value="FALSE" />
+        <Hidden value="FALSE" />
+        <System value="FALSE" />
+        <Permanent value="FALSE" />
+        <SharedLegacy value="FALSE" />
+        <PackageAs value="1" />
+        <Register value="1" />
+        <Exclude value="FALSE" />
+        <IsDependency value="FALSE" />
+        <IsolateTo value="" />
+        <ProjectOutputGroupRegister value="1" />
+        <OutputConfiguration value="" />
+        <OutputGroupCanonicalName value="Built" />
+        <OutputProjectGuid value="{1030ED49-E496-42E9-954F-1B94F60B905A}" />
+        <ShowKeyOutput value="TRUE" />
+        <ExcludeFilters>
+        </ExcludeFilters>
+      </_3C62AF5ED5F2430F803FF953E961DD02>
+    </ProjectOutput>
+  </Deployable>
+</DeployProject>

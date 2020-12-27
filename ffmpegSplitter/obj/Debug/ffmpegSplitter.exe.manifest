@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ffmpegSplitter.exe" size="29120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ffmpegSplitter.exe" size="33216">
       <assemblyIdentity name="ffmpegSplitter" version="1.1.1.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dAixsIA77i5okU28I/EWwPjZ023Y3BZtptney6ARgRE=</dsig:DigestValue>
+        <dsig:DigestValue>Iz6LVFpfeC9hYS4/wyIzZoBsXIA5UV/bJ/DeeJi/Ozg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -66,13 +66,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ffmpegSplitter.exe.config" size="1926">
+  <file name="ffmpegSplitter.exe.config" size="1969">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>1S9yuli0L8JlrScHMjqDO+9ScO3GMXPBEoGx9uNdKWM=</dsig:DigestValue>
+      <dsig:DigestValue>sJSsRemcBEx4qTLnZmq7joW4v7ZREUJLnCeshDrGlew=</dsig:DigestValue>
     </hash>
   </file>
   <file name="icon.ico" size="4286">
